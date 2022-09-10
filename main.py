@@ -15,7 +15,7 @@ while True:
           new += [command]
           async def main():
             async with app:
-              await app.send_message("me", command)
+              await app.send_message(-1001618019889, command)
           f.write(command+"\n")
           app.run(main())
           print("Sent "+i.title)
